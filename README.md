@@ -2,6 +2,8 @@
 
 Controle financeiro pessoal com carteira de ativos e cotações em tempo real.
 
+**Acesse: [finpulse-vert.vercel.app](https://finpulse-vert.vercel.app)**. A API fica num plano gratuito que adormece sem uso, então o primeiro acesso pode levar cerca de um minuto.
+
 Você registra receitas e despesas, define um teto de gastos por categoria e cadastra o que possui de moeda estrangeira e criptomoedas. O valor da carteira em reais é recalculado na tela a cada nova cotação, sem recarregar a página.
 
 ![Visão geral do FinPulse](docs/visao-geral.png)
