@@ -1,0 +1,18 @@
+# Sobe só o banco de dados: docker compose up -d
+services:
+  db:
+    image: postgres:16
+    container_name: finpulse-db
+    environment:
+      POSTGRES_USER: finpulse
+      POSTGRES_PASSWORD: finpulse
+      POSTGRES_DB: finpulse
+    ports:
+      - '5432:5432'
+    volumes:
+      - finpulse-data:/var/lib/postgresql/data
+      # roda uma única vez, na criação do volume: cria o banco dos testes
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+volumes:
+  finpulse-data:
